@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Aula 9 - localStorage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilo.css"/>
+    </head>
+    <body>
+        <div><h2>Vendas por Vendedor</h2></div>
+        
+        <form>
+            <fieldset>
+                <legend> Lançamentos </legend>
+                <label for="txtNome"> Nome </label>
+                <input type="text" id="txtNome" placeholder="Digite o nome do vendedor(a)..." required/>
+                <br>
+                <label for="txtMes">Mês </label>
+                
+                <select id="txtMes" required>
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <br>
+                <label for="txtValor"> Valor (R$) </label>
+                <input type="text" id="txtValor" placeholder="Digite o valor da venda..." required/><br>
+                <input type="submit" value="Salvar" id="botao"/>
+            </fieldset>
+        </form>
+        <script src="js/funcaoLocalStorage.js"></script>
+        <script src="js/RegistrosVendas.js"></script>
+    </body>
+</html>
